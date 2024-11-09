@@ -7,8 +7,7 @@
     "storage",
     "tabs",
     "scripting",
-    "https://login.salesforce.com/",
-    "https://test.salesforce.com/"
+    "https://*.salesforce.com/"
   ],
   "background": {
     "service_worker": "background.js"
@@ -28,7 +27,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://login.salesforce.com/*", "https://test.salesforce.com/*"],
+      "matches":["https://*.salesforce.com/*"],
       "js": ["content.js"]
     }
   ]
